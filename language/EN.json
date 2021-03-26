@@ -226,6 +226,14 @@
             "CLOUD": "Cloud",
             "NOT_FOUND": "```I couldn't find a city with this name. 😖```"
         },
+        "quote": {
+            "QUOTE_DESC": "Gives a random quote.",
+            "NEED_LOCATIONA": "*Invalid Request*",
+            "QUOTE": "Quote:",
+            "AUTHOR": "Author:",
+            "NOT_FOUNDA": "```Sorry,I could not find a quote. 😖```",
+            "NAMEY": "Name:",
+            "PUBLISHER": "Publisher"
         "web": {
             "SPEEDTEST_DESC": "Measures Download and Upload speed.",
             "SPEEDTESTING": "```Running speed test...```",
