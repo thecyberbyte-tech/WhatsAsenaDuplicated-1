@@ -218,6 +218,46 @@ Asena.addCommand({pattern: 'lovelogo ?(.*)', fromMe: false, dontAddCommandList: 
 
 }));
 
+Asena.addCommand({pattern: 'sweetcandy ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+
+    var webimage = await axios.get(`https://videfikri.com/api/textmaker/sweetcandy/?text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg })
+
+}));
+
+Asena.addCommand({pattern: 'underwatertxt ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+
+    var webimage = await axios.get(`https://videfikri.com/api/textmaker/underwater/?text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg })
+
+}));
+
+Asena.addCommand({pattern: 'coffeecup1 ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+
+    var webimage = await axios.get(`https://videfikri.com/api/textmaker/coffeecup2/?text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg })
+
+}));
+
+Asena.addCommand({pattern: 'romancetxt ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
+
+    var webimage = await axios.get(`https://videfikri.com/api/textmaker/romancetext/?text=${match[1]}`, { responseType: 'arraybuffer' })
+
+    await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.image, {mimetype: Mimetype.jpg })
+
+}));
+
 Asena.addCommand({pattern: 'harrypotter ?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORD);
