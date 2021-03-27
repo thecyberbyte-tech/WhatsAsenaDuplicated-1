@@ -56,12 +56,12 @@ if (cn.WORKTYPE == 'private') {
             })
 
             const msg = `
-            *📌${Lang.NAME}*: ${full_name}
-            *🔖${Lang.USERNAME}*: ${username}
-            *📇${Lang.BIO}*: ${bio}
-            *💖${Lang.FOLLOWERS}*: ${followers}
-            *👥${Lang.FOLLOWS}*: ${following}
-            *🔒${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
+            *${Lang.NAME}*: ${full_name}
+            *${Lang.USERNAME}*: ${username}
+            *${Lang.BIO}*: ${bio}
+            *${Lang.FOLLOWERS}*: ${followers}
+            *${Lang.FOLLOWS}*: ${following}
+            *${Lang.ACCOUNT}*: ${is_private ? Lang.PUBLIC : Lang.HIDDEN}`
 
             await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
               caption: msg,
@@ -101,12 +101,12 @@ else if (cn.WORKTYPE == 'public') {
             })
 
             const msg = `
-            *📌${Lang.NAME}*: ${full_name}
-            *🔖${Lang.USERNAME}*: ${username}
-            *📇${Lang.BIO}*: ${bio}
-            *💖${Lang.FOLLOWERS}*: ${followers}
-            *👥${Lang.FOLLOWS}*: ${following}
-            *🔒${Lang.ACCOUNT}*: ${is_private ? Lang.HIDDEN : Lang.PUBLIC}`
+            *${Lang.NAME}*: ${full_name}
+            *${Lang.USERNAME}*: ${username}
+            *${Lang.BIO}*: ${bio}
+            *${Lang.FOLLOWERS}*: ${followers}
+            *${Lang.FOLLOWS}*: ${following}
+            *${Lang.ACCOUNT}*: ${is_private ? Lang.PUBLIC : Lang.HIDDEN}`
 
             await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
               caption: msg,
