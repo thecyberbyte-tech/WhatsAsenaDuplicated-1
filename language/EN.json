@@ -439,7 +439,6 @@
             "TRUMP_DESC": "Converts the text to Trump's tweet.",
             "CHANGE_DESC": "Turns the text into the change my mind poster.",
             "TXTTOIMG_DESC": "Set of commands to convert text into images."
-                        "HP_DESC":"```Converts the text into a harrypotter themed image```"
         },
         "wallpaper": {
             "WP": "It sends high resolution wallpapers."
