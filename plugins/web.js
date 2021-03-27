@@ -29,7 +29,7 @@ function speedText(speed) {
     return `${bits.toFixed(places[unit])} ${units[unit]}bps`;
 }
 
-Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'speedtest', fromMe: false, desc: Lang.SPEEDTEST_DESC}, (async (message, match) => {
     var msg = await message.reply(Lang.SPEEDTESTING);
     var st = await speedTest({acceptLicense: true, acceptGdpr: true});
     
@@ -43,7 +43,7 @@ Asena.addCommand({pattern: 'speedtest', fromMe: true, desc: Lang.SPEEDTEST_DESC}
     await msg.delete();
 }));
 
-Asena.addCommand({pattern: 'ping', fromMe: true, deleteCommand: false, desc: Lang.PING_DESC}, (async (message, match) => {
+Asena.addCommand({pattern: 'ping', fromMe: false, deleteCommand: false, desc: Lang.PING_DESC}, (async (message, match) => {
   var start = new Date().getTime();
   var msg = await message.reply('```Ping!```');
   var end = new Date().getTime();
@@ -53,7 +53,7 @@ Asena.addCommand({pattern: 'ping', fromMe: true, deleteCommand: false, desc: Lan
     message.jid,'*Pong!*\n```' + (end - start) + 'ms```', MessageType.text);
 }));
 
-Asena.addCommand({pattern: 'short ?(.*)', fromMe: true, desc: Lang.URL}, (async (message, match) => {
+Asena.addCommand({pattern: 'short ?(.*)', fromMe: false, desc: Lang.URL}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid, SLang.LİNK, MessageType.text);
 
@@ -63,4 +63,40 @@ Asena.addCommand({pattern: 'short ?(.*)', fromMe: true, desc: Lang.URL}, (async 
 
         await message.client.sendMessage(message.jid,`*Original Link:* ${match[1]}\n*Short Link:* ` + res, MessageType.text)
     });
+}));
+
+Asena.addCommand({pattern: 'pping', fromMe: true, deleteCommand: false, dontAddCommandList: true}, (async (message, match) => {
+  var start = new Date().getTime();
+  var msg = await message.reply('```Ping!```');
+  var end = new Date().getTime();
+
+  await msg.delete();
+  await message.client.sendMessage(
+    message.jid,'*Pong!*\n```' + (end - start) + 'ms```', MessageType.text);
+}));
+
+Asena.addCommand({pattern: 'pshort ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+
+    if (match[1] === '') return await message.client.sendMessage(message.jid, SLang.LİNK, MessageType.text);
+
+    TinyURL.shorten(`${match[1]}`, async(res, err) => {
+      if (err)
+        await message.client.sendMessage(message.jid, '*#### Error! ####*\n\n' + '```' + err + '```', MessageType.text);
+
+        await message.client.sendMessage(message.jid,`*Original Link:* ${match[1]}\n*Short Link:* ` + res, MessageType.text)
+    });
+}));
+
+Asena.addCommand({pattern: 'pspeedtest', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    var msg = await message.reply(Lang.SPEEDTESTING);
+    var st = await speedTest({acceptLicense: true, acceptGdpr: true});
+    
+    await message.client.sendMessage(
+      message.jid,Lang.SPEEDTEST_RESULT + '\n\n' + 
+    '*ISP:* ```' + st.isp + '```\n' +
+    '*Ping:* ```' + st.ping.latency + 'ms```\n' +
+    '*' + Lang.UPLOAD + ':* ```' + speedText(st.upload.bandwidth) + '```\n' +
+    '*' + Lang.DOWNLOAD + ':* ```' + speedText(st.download.bandwidth) + '```\n',MessageType.text
+    );
+    await msg.delete();
 }));
