@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/fazilvk786/WhatsAsenaDuplicated/fork">
-    <img src="https://img.shields.io/github/forks/phaticusthiccy/WhatsAsenaDuplicated?label=Fork&style=social">
+    <img src="https://img.shields.io/github/forks/fazilvk786/WhatsAsenaDuplicated?label=Fork&style=social">
     
   </a>
   <a href="https://github.com/fazilvk786/WhatsAsenaDuplicated/stargazers">
