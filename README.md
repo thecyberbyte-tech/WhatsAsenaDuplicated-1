@@ -71,7 +71,7 @@ the user is responsible.
   <h1>🤖 FazoBoT</h1>
 </div>
 <p align="center">
-    Wh
+    Muhammed Fazil Vk
 
 FazoBoT project - Makes it easy and fun to use Whatsapp. Also first userbot for Whatsapp.
     <br>
