@@ -1,6 +1,6 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
+/* Codded by @fazilvk786
+Telegram: t.me/fazilvk
+Instagram: www.instagram.com/mu.fazil_vk
 */
 
 const Asena = require('../events');
