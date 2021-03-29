@@ -199,7 +199,8 @@
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
-            "SYSD_DESC": "Shows the system properties."
+            "SYSD_DESC": "Shows the system properties.",
+            "TOOLS_DESC": "Show amazing text tools."
         },
         "tagall": {
             "TAGALL_DESC": "Tags everyone in the group.",
