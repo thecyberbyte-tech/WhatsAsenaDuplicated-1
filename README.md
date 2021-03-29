@@ -10,10 +10,10 @@
     
   </a>
   <a href="https://github.com/fazilvk786/WhatsAsenaDuplicated/stargazers">
-    <img src="https://img.shields.io/github/stars/phaticusthiccy/WhatsAsenaDuplicated?style=social">
+    <img src="https://img.shields.io/github/stars/fazilvk786/WhatsAsenaDuplicated?style=social">
   </a>
   <a href="https://github.com/fazilvk786/WhatsAsenaDuplicated/commits/master">
-    <img src="https://img.shields.io/github/commit-activity/m/phaticusthiccy/WhatsAsenaDuplicated?style=social">
+    <img src="https://img.shields.io/github/commit-activity/m/fazilvk786/WhatsAsenaDuplicated?style=social">
   </a>
   <a href="https://i.hizliresim.com/ZtrNkY.png">
     <img src="https://img.shields.io/badge/Donate-Papara%201%E2%82%BA-important?style=plastic&logo=appveyor">
@@ -23,27 +23,27 @@
 
 <p align="center">
   <a href="httsp://github.com/fazilvk786/WhatsAsenaDuplicated">
-    <img src="https://img.shields.io/github/repo-size/phaticusthiccy/WhatsAsenaDuplicated?color=purple&label=Repo%20Boyutu&style=plastic">
+    <img src="https://img.shields.io/github/repo-size/fazilvk786/WhatsAsenaDuplicated?color=purple&label=Repo%20Boyutu&style=plastic">
 
   </a>
   <a href="httsp://github.com/fazilvk786/WhatsAsenaDuplicated">
-    <img src="https://img.shields.io/codefactor/grade/github/phaticusthiccy/WhatsAsenaDuplicated?color=purple&label=Kod%20Kalitesi&style=plastic">
+    <img src="https://img.shields.io/codefactor/grade/github/fazilvk786/WhatsAsenaDuplicated?color=purple&label=Kod%20Kalitesi&style=plastic">
 
   </a>
   <a href="https://github.com/fazilvk786/WhatsAsenaDuplicated/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/phaticusthiccy/WhatsAsenaDuplicated?color=purple&label=Lisans&style=plastic">
+    <img src="https://img.shields.io/github/license/fazilvk786/WhatsAsenaDuplicated?color=purple&label=Lisans&style=plastic">
 
   </a>
   <a href="https://github.com/fazilvk786/WhatsAsenaDuplicated">
-    <img src="https://img.shields.io/github/languages/top/phaticusthiccy/WhatsAsenaDuplicated?color=purple&label=Javascript&style=plastic">
+    <img src="https://img.shields.io/github/languages/top/fazilvk786/WhatsAsenaDuplicated?color=purple&label=Javascript&style=plastic">
 
   </a>
   <a href="https://github.com/fazilvk786">
     <img src="https://img.shields.io/static/v1?label=Author&message=Thiccy&color=purple&style=plastic">
 
   </a>
-  <a href="https://t.me/asenaremaster">
-    <img src="https://img.shields.io/badge/Telegram-Asena%20Remaster-purple&style=plastic">
+  <a href="https://t.me/cinem_compny">
+    <img src="https://img.shields.io/badge/Telegram-Cinema%20Company-purple&style=plastic">
 
   </a>
 </p>
