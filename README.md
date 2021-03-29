@@ -39,7 +39,7 @@
 
   </a>
   <a href="https://github.com/fazilvk786">
-    <img src="https://img.shields.io/static/v1?label=Author&message=Thiccy&color=purple&style=plastic">
+    <img src="https://img.shields.io/static/v1?label=Author&message=Fazil%20vk&color=purple&style=plastic">
 
   </a>
   <a href="https://t.me/cinem_compny">
