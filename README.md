@@ -67,7 +67,7 @@ the user is responsible.
 ```
 
 <div align="center">
-  <img src="https://i.hizliresim.com/mm1NBs.jpg" width="200" height="200">
+  <img src="https://telegra.ph/file/91cbe21b272fdcf9b4543.jpg" width="200" height="200">
   <h1>🤖 FazoBoT</h1>
 </div>
 <p align="center">
